@@ -150,11 +150,54 @@ public class Pojo  {
 	@FindBy(xpath="//h2[text()='Contact Us']")
 	private WebElement ContactUSFlood;
 	
+	@FindBy(xpath="//div[text()='Partner Solutions']")
+	private WebElement partnersolution;
+	
+	@FindBy (xpath="//a[text()='Vehicle Protection']")
+	private WebElement vehicleProtectionServices;
+	
+	@FindBy (xpath="//button[@id='truste-consent-button']")
+	private WebElement cookiesAccept;
+	
+	@FindBy (xpath="(//p[@class='ph-link-text-summary']//parent::div[@class='ph-link-text'])[1]")
+	private WebElement claimAndPolicySupport;
+	
+	@FindBy (xpath="//button[@class='start-repair']")
+	private WebElement repairhelp;
 	
 	
+	//span[text()='Get Repair Help']
 	
-	
-	
+
+
+
+	public WebElement getPartnersolution() {
+		return partnersolution;
+	}
+
+
+
+	public WebElement getVehicleProtectionServices() {
+		return vehicleProtectionServices;
+	}
+
+
+
+	public WebElement getCookiesAccept() {
+		return cookiesAccept;
+	}
+
+
+
+	public WebElement getClaimAndPolicySupport() {
+		return claimAndPolicySupport;
+	}
+
+
+
+	public WebElement getRepairhelp() {
+		return repairhelp;
+	}
 
 
 

@@ -307,6 +307,45 @@ public class stepdefinition{
 	    basee.multiWindowHandle(3);
 	    basee.button(pojo.getContactUSFlood());
 	}
+	
+	
+	@When("user click on partner solution")
+	public void user_click_on_partner_solution() {
+	    basee.button(pojo.getPartnersolution());
+	}
+
+	@When("user click on vehicle protection Services")
+	public void user_click_on_vehicle_protection_services() throws InterruptedException {
+		Thread.sleep(3000);
+	    basee.button(pojo.getVehicleProtectionServices());
+	    basee.button(pojo.getCookiesAccept());
+	}
+
+	@When("user click on claim and POlicy support")
+	public void user_click_on_claim_and_p_olicy_support() throws InterruptedException {
+		Thread.sleep(3000);
+		basee.scroll(pojo.getClaimAndPolicySupport());
+		Thread.sleep(2000);
+		basee.button(pojo.getClaimAndPolicySupport(),0);
+	   
+	}
+
+	@When("user click on getRepair help")
+	public void user_click_on_get_repair_help() throws InterruptedException {
+		Thread.sleep(2000);
+	    basee.button(pojo.getRepairhelp(),0);
+	}
+
+	@Then("validate sign in  form is opened")
+	public void validate_sign_in_form_is_opened() {
+	   String url = basee.currentUrl();
+	   
+	  Assert.assertEquals("https://vehiclecareplan.com/login", url);
+	   System.out.println(url+ "Page is Navigated");
+
+	}
+
+
 
 
 	

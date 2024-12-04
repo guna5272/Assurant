@@ -39,6 +39,13 @@ Background: Navigate to dropdown
       And User Click Contact Private Flood Support in New Tab
       Then Validate Contact us page is Navigated in new Tab
       
+      Scenario: vechicle protection
+      When user click on partner solution
+      And user click on vehicle protection Services
+      When user click on claim and POlicy support
+      And user click on getRepair help
+      Then validate sign in  form is opened
+      
       
       
       
